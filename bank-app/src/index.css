@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+
+.margin-nav-link {
+  margin-left: 25%;
+}
+.margin-nav-link a {
+  font-family: Impact;
+  
+}
+
+.nav-link-effect:hover {
+  transition: 0.9s;
+  background-color: rgb(70, 181, 255);
+  
+  /* text-decoration: underline #5fcf80 2px; */
+  transform: scale(1.5rem);
+}
+
+li a {
+  letter-spacing: .1rem;
+}
+nav{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 10px #00000046;
+  /* border-bottom: 0.05rem white solid; */}
+
+
+
+
+  .hero-section{
+    background-size: cover;
+    height: 30rem;
+    background-attachment: fixed;
+  }
+
+  .btn-get-started{
+    
+    animation: animate-img infinite 1s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes animate-img {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.2);
+      
+      
+    }
+  }
+  .logo-image{
+    margin-left: 40px;
+  }
+  .hero-section h1{
+    margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif
+  }
+
+.hero-section .btn-get-started {
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-size: 15px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 10px 35px;
+border-radius: 50px;
+margin-left: 10px;
+transition: 0.5s;
+margin-top: 30px;
+border: 2px solid #040404;
+color: #050505;
+text-decoration: none;
+}
+.btn-get-started:hover{
+background-color: rgb(70, 181, 255);
+border-color: rgb(70, 181, 255);
+}
+
+.btn-submit{
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-size: 15px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 10px 35px;
+border-radius: 50px;
+transition: 0.5s;
+margin-top: 30px;
+background-color: black;
+border: 2px solid #fff;
+color: #fff;
+text-decoration: none;
+}
+.btn-submit:hover{
+background-color: rgb(70, 181, 255);
+border-color:rgb(70, 181, 255);
+}
+
+
+
+.hero-section h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#student-form input{
+margin-top: 1rem;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.489)
+}
+select{
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.489)
+}
+table tr:nth-child(even){
+background-color: #ffffff;
+}
+table tr{
+height: 3rem;
+}
+
+table td{
+color: black;
+}
+
+
+footer{
+  
+background-color: white;
+border-top: 0.2rem rgba(0, 0, 0, 0.363) solid;
+
+/* border-bottom: 0.05rem white solid; */
+
+}
+
+@media (max-width: 768px){
+.hero-section h1 {
+  font-size: 28px;
+  line-height: 36px;
+
+  
+}
+
+.hero-section h2 {
+font-size: 18px;
+line-height: 24px;
+}
+.logo-image{
+margin-left: 2px;
+}
+
+
+}
+
+@media (max-width: 768px){
+.cardwidth{
+  width: 20rem;
+
+}
+}
+@media (min-width: 768px){
+.cardwidth{
+  width: 13rem;
+
+}
+}
+
+
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
