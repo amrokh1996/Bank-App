@@ -8,8 +8,18 @@ import AccountForm from './accountform';
 export default function TableData() {
 const accounts = JSON.parse(localStorage.getItem("accounts"))
 const handleClick = event => {
-  accounts.splice(event.currentTarget.value, 1);
-  localStorage.setItem("accounts",JSON.stringify(accounts))
+
+  let count = -1
+  for(let x in accounts){
+    count+=1
+    if(accounts[x].id ==  event.currentTarget.value){
+      accounts.splice(count, 1);
+      localStorage.setItem("accounts",JSON.stringify(accounts))
+      window.location.reload(false);
+
+    }
+  }
+
   
 
 };

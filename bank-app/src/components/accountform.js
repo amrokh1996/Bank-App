@@ -9,7 +9,14 @@ const [customerName, setcustomerName] = useState('');
 const [accountNumber, setaccountNumber] = useState('');
 const [accountType, setaccountType] = useState('');
 const [accounts, setItems] = useState([]);
-const currentid=accounts.length
+
+let first = 0
+for(let i in accounts){
+  if(accounts[i].id>first){
+    first =accounts[i].id
+  }
+}
+const currentid=first+1
 
 
 
@@ -44,7 +51,7 @@ const transferValue = (event) => {
 	 
 	 
 	const accounts = {
-		id:currentid,
+		   id:currentid,
         customerName:customerName,
         accountNumber:accountNumber,
         accountType:accountType
